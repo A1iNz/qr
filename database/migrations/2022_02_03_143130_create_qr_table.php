@@ -15,6 +15,7 @@ class CreateQrTable extends Migration
     {
         Schema::create('qr', function (Blueprint $table) {
             $table->id();
+            $table->string('link');
             $table->timestamps();
         });
     }
